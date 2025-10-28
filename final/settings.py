@@ -59,7 +59,7 @@ ROOT_URLCONF = 'final.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR , "templates"],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,8 +133,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Additional directories Django looks for static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "../admin_dashboard/static"),
+    os.path.join(BASE_DIR, "app/static"),
+    os.path.join(BASE_DIR, "admin_dashboard/static"),
     # BASE_DIR , "admin_dashboard/static/",
 
 ]
