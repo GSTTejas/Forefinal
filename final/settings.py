@@ -17,7 +17,7 @@ from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+print("Base DIR : ", BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-2=t(+u!-lk!n3zwo!p=_i5((hm-!1d0c1&37zji@zy-#1e98+g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['zygotic-marice-gstempire-6a65f40a.koyeb.app']
+ALLOWED_HOSTS = ['zygotic-marice-gstempire-6a65f40a.koyeb.app', '*']
 
 
 # Application definition
@@ -134,8 +134,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Additional directories Django looks for static files
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    # os.path.join(BASE_DIR, "admin_dashboard/static"),
-    BASE_DIR , "admin_dashboard/static/",
+    os.path.join(BASE_DIR, "../admin_dashboard/static"),
+    # BASE_DIR , "admin_dashboard/static/",
 
 ]
 
