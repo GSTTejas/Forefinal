@@ -132,12 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Additional directories Django looks for static files
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "app/static"),
-    os.path.join(BASE_DIR, "admin_dashboard/static"),
-    # BASE_DIR , "admin_dashboard/static/",
 
-]
 
 # WhiteNoise compression and caching
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
