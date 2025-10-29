@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -357,7 +357,7 @@
 
         <!-- Logo -->
         <div class="centered-logo-container">
-            <img src="static/img/ft.jpg" alt="Logo" class="centered-logo">
+            <img src="{% static 'img/ft.jpg' %}" alt="Logo" class="centered-logo">
             <div class="logo-text-card">
                 <p class="logo-text">Driven by Passion</p>
             </div>
